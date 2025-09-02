@@ -3,7 +3,7 @@ This is a easy to use template for deploying Wordpress with SSL certification.
 
 To install on your Linux server run these commands (if you need to set up a server see below):
 
-"git clone https://github.com/WirelessDan/WordpressCertbotDocker"
+"sudo git clone https://github.com/WirelessDan/WordpressCertbotDocker"
 "cd WordpressCertbotDocker"
 
 "sudo nano docker-compose.yml"
@@ -18,4 +18,4 @@ To set up a cloud server with a dedicated user for your WordPress site:
    "apt update && apt upgrade"
 2. Create a dedicated user with:
    "useradd -m -s /bin/bash YOUR_NEW_USERNAME && usermod -aG sudo YOUR_NEW_USERNAME && passwd YOUR_NEW_USERNAME" Enter your new password
-3. Switch user with "su YOUR_NEW_USERNAME" and follow the installation instructions above.
+3. Switch user with "su YOUR_NEW_USERNAME", then switch to that user's home directory with "cd ~" and follow the installation instructions above.
