@@ -1,4 +1,6 @@
 # WordpressCertbotDocker
+https://wirelessdan.net/2025/09/03/dockerized-wordpress-with-ssl/
+
 This is a easy to use template for deploying Wordpress with SSL certification.
 
 To install on your Linux server run these commands (if you need to set up a server see below):
