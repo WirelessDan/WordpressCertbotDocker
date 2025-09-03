@@ -26,7 +26,7 @@ services:
             - /var/run/docker.sock:/var/run/docker.sock
             - /var/docker/nginx/acme:/etc/acme.sh
         environment:
-            DEFAULT_EMAIL: test@mail.com    <!-- The email associated with your registerd domain. -->
+            DEFAULT_EMAIL: test@mail.com
 
     website:
         image: wordpress
@@ -38,8 +38,8 @@ services:
             WORDPRESS_DB_USER: website
             WORDPRESS_DB_PASSWORD: password
             WORDPRESS_DB_NAME: website
-            VIRTUAL_HOST: website.com       <!-- Your registered domain. -->
-            LETSENCRYPT_HOST: website.com   <!-- Your registered domain. -->
+            VIRTUAL_HOST: website.com
+            LETSENCRYPT_HOST: website.com
         depends_on:
             - website-db
         restart: unless-stopped
